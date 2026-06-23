@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devarasetti Yaswanth Kiran - Portfolio</title>
+    <style>
+        /* CSS resets and base styles */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            color: #f8fafc;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Glassmorphism utility class */
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 900px;
+            transition: transform 0.3s ease;
+        }
+        
+        .glass:hover {
+            transform: translateY(-2px);
+        }
+
+        h1, h2, h3 { color: #e0f2fe; margin-bottom: 1rem; }
+        h1 { font-size: 2.5rem; text-align: center; line-height: 1.2; }
+        h2 { 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+            padding-bottom: 0.5rem; 
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+        }
+        h3 { font-size: 1.25rem; color: #bae6fd; margin-bottom: 0.5rem; }
+        
+        p { margin-bottom: 1rem; color: #e2e8f0; }
+        
+        a { color: #38bdf8; text-decoration: none; transition: color 0.3s; font-weight: 500; }
+        a:hover { color: #7dd3fc; text-decoration: underline; }
+        
+        ul { margin-left: 1.5rem; margin-bottom: 1rem; color: #e2e8f0; }
+        li { margin-bottom: 0.5rem; }
+
+        /* Flexbox layouts */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .hero { 
+                flex-direction: row; 
+                text-align: left; 
+                padding: 3rem;
+            }
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 768px) {
+            .contact-links { justify-content: flex-start; }
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category p { margin-bottom: 0.25rem; }
+        .skill-category strong { color: #94a3b8; display: block; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+        .item-block {
+            margin-bottom: 2rem;
+        }
+        .item-block:last-child {
+            margin-bottom: 0;
+        }
+        
+        .date {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            font-style: italic;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .tags {
+            margin-bottom: 1rem;
+        }
+        .tag {
+            background: rgba(56, 189, 248, 0.1);
+            color: #7dd3fc;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header class="glass hero">
+        <img src="./YK_PassportSize.jpeg" alt="Devarasetti Yaswanth Kiran" class="profile-img">
+        <div>
+            <h1>Devarasetti Yaswanth Kiran</h1>
+            <p style="font-size: 1.1rem; color: #94a3b8; margin-bottom: 1.5rem;">Computer Science Graduate & Java Backend Developer</p>
+            <p>Computer Science graduate with hands-on experience in Java backend development, REST APIs, JDBC, MySQL, and full-stack application development. Built projects involving JavaFX, AI-based systems, and database integration. Strong foundation in OOP, problem solving, and software engineering concepts with interest in Java Full Stack Development.</p>
+            
+            <div class="contact-links">
+                <a href="mailto:yeswanthdevarasetti@gmail.com">yeswanthdevarasetti@gmail.com</a>
+                <a href="tel:+919121959158">+91 91219 59158</a>
+                <a href="https://github.com/ykwise" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/devarasetti-yaswanth-kiran/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Technical Skills Section -->
+    <section class="glass">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <strong>Programming Languages</strong>
+                <p>Java, Core Python</p>
+            </div>
+            <div class="skill-category">
+                <strong>Core Concepts</strong>
+                <p>OOPS, Exception Handling, Collection Framework</p>
+            </div>
+            <div class="skill-category">
+                <strong>Backend & APIs</strong>
+                <p>RESTful APIs, JDBC, JSP, Servlets, API Integration</p>
+            </div>
+            <div class="skill-category">
+                <strong>Databases</strong>
+                <p>MySQL, SQLite</p>
+            </div>
+            <div class="skill-category">
+                <strong>Frontend</strong>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-category">
+                <strong>Tools & Platforms</strong>
+                <p>Git, Maven, VS Code, Android Studio</p>
+            </div>
+            <div class="skill-category">
+                <strong>AI & Computer Vision</strong>
+                <p>YOLOv8, Computer Vision, CNN</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="glass">
+        <h2>Projects</h2>
+        
+        <div class="item-block">
+            <h3>FireEye - An AI Based Early Wildfire Surveillance System</h3>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">YOLOv8</span>
+            </div>
+            <ul>
+                <li>Developed a scalable backend system for real-time image processing, alert generation, and API-based communication.</li>
+                <li>Designed and integrated RESTful APIs for wildfire detection workflows and automated alert systems.</li>
+                <li>Integrated cloud storage and automated notification systems (Email/SMS).</li>
+                <li>Optimized detection workflows to improve responsiveness and reliability.</li>
+            </ul>
+        </div>
+
+        <div class="item-block">
+            <h3>Expensio - Full Stack Desktop Expense Tracker</h3>
+            <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">JavaFX</span>
+                <span class="tag">SQLite</span>
+            </div>
+            <ul>
+                <li>Developed a Java-based full stack desktop application using MVC architecture and database integration.</li>
+                <li>Implemented CRUD operations, SQL queries, and SQLite database management.</li>
+                <li>Designed interactive user interfaces using JavaFX and FXML.</li>
+                <li>Visualized financial insights using charts and analytics components.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Internship Experience Section -->
+    <section class="glass">
+        <h2>Internship Experience</h2>
+        
+        <div class="item-block">
+            <h3>Java Developer Intern | Elevate Labs</h3>
+            <span class="date">Sep 2025 - Nov 2025</span>
+            <ul>
+                <li>Developed Java-based backend applications and CRUD systems using OOP principles.</li>
+                <li>Worked with RESTful API concepts, debugging, testing, and database integration.</li>
+                <li>Collaborated in real-world software development workflows and version control practices.</li>
+                <li>Improved application performance and handled bug fixing for reliable operations.</li>
+                <li>Awarded Best Performer for exceptional analytical thinking and technical contribution.</li>
+            </ul>
+        </div>
+
+        <div class="item-block">
+            <h3>AI-ML Virtual Intern | Google for Developers & EduSkills</h3>
+            <span class="date">Apr 2025 - Jun 2025</span>
+            <ul>
+                <li>Learned Artificial Intelligence, Machine Learning, and Deep Learning fundamentals.</li>
+                <li>Explored Computer Vision workflows and model training concepts.</li>
+                <li>Worked on data preprocessing, AI/ML workflows, and practical virtual projects.</li>
+                <li>Gained exposure to industry-oriented AI technologies and problem-solving approaches.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="glass">
+        <h2>Education</h2>
+        <div class="item-block">
+            <h3>QIS College of Engineering and Technology</h3>
+            <span class="date">2022 - 2026</span>
+            <p>B.Tech in Computer Science | <strong>GPA: 8.50/10</strong></p>
+        </div>
+        <div class="item-block">
+            <h3>Bharatiya Vidya Bhavan's Residential Public School</h3>
+            <span class="date">2021 - 2022</span>
+            <p>Senior Secondary (CBSE) | <strong>92.4%</strong></p>
+        </div>
+        <div class="item-block">
+            <h3>Bharatiya Vidya Bhavan's Residential Public School</h3>
+            <span class="date">2019 - 2020</span>
+            <p>Secondary (CBSE) | <strong>93.2%</strong></p>
+        </div>
+    </section>
+
+    <!-- Certifications & Extra Info Section -->
+    <section class="glass">
+        <h2>Certifications</h2>
+        <ul style="margin-bottom: 2rem;">
+            <li>Accenture Data Analytics & Visualization - Forage (2024)</li>
+            <li>Android Developer Virtual Internship - Google / AICTE (2024)</li>
+            <li>Python Programming - NSDC Skill India (2025)</li>
+            <li>HTML & CSS Bootcamp - LetsUpgrade, ITM Edutech, GDG MAD (2025)</li>
+            <li>AI-ML Virtual Internship - Google / AICTE (2025)</li>
+        </ul>
+        
+        <h2>Additional Information</h2>
+        <div class="tags" style="margin-bottom: 0;">
+            <span class="tag">Problem Solving</span>
+            <span class="tag">Analytical Thinking</span>
+            <span class="tag">Team Collaboration</span>
+            <span class="tag">Adaptability</span>
+        </div>
+    </section>
+
+</body>
+</html>
